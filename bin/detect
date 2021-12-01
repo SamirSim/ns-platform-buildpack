@@ -1,0 +1,11 @@
+#!/bin/bash
+
+BUILD_DIR=$1
+
+# Exit early if app is clearly not Python.
+if [ ! -f "$BUILD_DIR/static/ns-wifi" ] && [ ! -f "$BUILD_DIR/static/ns-lora" ]; then
+  exit 1
+fi
+
+exit 0
+
