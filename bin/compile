@@ -8,4 +8,4 @@ ENV_DIR=$3
 
 echo -n ${BUILD_DIR} > "${BUILD_DIR}/.ns_build_symlink"
 
-cd "${BUILD_DIR}/static/ns3" && ./waf configure --disable-werror --enable-static --build-profile=debug && ./waf build
+cd "${BUILD_DIR}/static/ns3" && ./waf configure --disable-werror --enable-static && ./waf build
