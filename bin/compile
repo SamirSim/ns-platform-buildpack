@@ -9,4 +9,4 @@ ENV_DIR=$3
 echo -n ${BUILD_DIR} > "${BUILD_DIR}/.ns_build_symlink"
 cd "${BUILD_DIR}/static/ns3" && ./waf configure --disable-werror --enable-static --build-profile release && ./waf build --jobs=4
 #cd "${BUILD_DIR}/static/ns3" && CXXFLAGS="-Wall" ./waf configure --enable-static --build-profile release && ./waf -vv --jobs=4
-#cd "${BUILD_DIR}/static/ns3-halow" && CXXFLAGS="-Wall" ./waf configure && ./waf -vv --jobs=4
+cd "${BUILD_DIR}/static/ns3-halow" && CXXFLAGS="-Wall" ./waf configure && ./waf -vv --jobs=4
